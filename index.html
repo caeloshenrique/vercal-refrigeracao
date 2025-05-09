@@ -104,9 +104,7 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 91, 150, 0.7), rgba(0, 91, 150, 0.7)), url('https://images.unsplash.com/photo-1609358905581-d7f6fd0a6d8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
-            background-size: cover;
-            background-position: center;
+            background: url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
             background-attachment: fixed;
             height: 100vh;
             display: flex;
@@ -115,7 +113,6 @@
             color: var(--branco);
             margin-top: 60px;
             position: relative;
-            overflow: hidden;
         }
         
         .hero::before {
@@ -125,9 +122,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
-            z-index: -1;
-            opacity: 0.5;
+            background-color: rgba(0, 91, 150, 0.7);
         }
         
         .hero-content {
@@ -135,10 +130,6 @@
             z-index: 1;
             width: 100%;
             padding: 2rem;
-            background-color: rgba(0, 91, 150, 0.8);
-            border-radius: 10px;
-            margin: 0 auto;
-            max-width: 800px;
         }
         
         .hero-content h1 {
@@ -150,6 +141,9 @@
         .hero-content p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
         
@@ -162,19 +156,332 @@
             text-decoration: none;
             font-weight: bold;
             transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
         }
         
         .btn:hover {
             background-color: #3e8e41;
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
         
-        /* Restante do CSS permanece igual ao código anterior */
-        /* ... [Manter todo o restante do CSS igual] ... */
+        /* Sobre */
+        .sobre {
+            padding: 5rem 0;
+            background-color: var(--cinza-claro);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            color: var(--azul);
+        }
+        
+        .sobre-content {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+        
+        .sobre-text {
+            flex: 1;
+        }
+        
+        .sobre-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--azul);
+        }
+        
+        .credenciada-badge {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--azul);
+            color: var(--branco);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .credenciada-badge img {
+            height: 30px;
+            margin-right: 0.8rem;
+        }
+        
+        .sobre-img {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .sobre-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Serviços */
+        .servicos {
+            padding: 5rem 0;
+        }
+        
+        .servicos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .servico-card {
+            background-color: var(--branco);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .servico-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .servico-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .servico-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+        
+        .servico-card:hover .servico-img img {
+            transform: scale(1.1);
+        }
+        
+        .servico-content {
+            padding: 1.5rem;
+        }
+        
+        .servico-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--azul);
+        }
+        
+        .servico-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Clientes */
+        .clientes {
+            padding: 5rem 0;
+            background-color: var(--cinza-claro);
+        }
+        
+        .clientes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 3rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+        
+        .cliente-logo {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .cliente-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        /* Contato */
+        .contato {
+            padding: 5rem 0;
+        }
+        
+        .contato-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        
+        .contato-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--azul);
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        
+        .info-item i {
+            font-size: 1.2rem;
+            color: var(--verde);
+            margin-right: 1rem;
+            margin-top: 0.3rem;
+        }
+        
+        .contato-form .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .contato-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .contato-form input,
+        .contato-form textarea,
+        .contato-form select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .contato-form textarea {
+            height: 150px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--azul);
+            color: var(--branco);
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 50px;
+            height: 2px;
+            background-color: var(--verde);
+        }
+        
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-col ul li a {
+            color: var(--branco);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-col ul li a:hover {
+            color: var(--verde);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: var(--branco);
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--verde);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Responsivo */
+        @media (max-width: 992px) {
+            .sobre-content {
+                flex-direction: column;
+            }
+            
+            .sobre-text, .sobre-img {
+                flex: none;
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+            
+            nav {
+                position: fixed;
+                top: 60px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 60px);
+                background-color: var(--azul);
+                transition: all 0.3s ease;
+            }
+            
+            nav.active {
+                left: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                padding: 2rem;
+            }
+            
+            nav ul li {
+                margin: 1rem 0;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .credenciamento {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -202,20 +509,286 @@
         </div>
     </header>
 
-    <!-- Hero Section com imagem de fundo atrás do texto -->
+    <!-- Hero Section com imagem de fundo -->
     <section class="hero" id="home">
-        <div class="hero-content">
+        <div class="container hero-content">
             <h1>Referência em Qualidade de Serviço</h1>
             <p>Especializados em comércio, instalação e manutenção de ar condicionado, com projetos técnicos elaborados por profissionais qualificados. Credenciada oficialmente pela Hitachi.</p>
             <a href="#contato" class="btn">Solicite um Orçamento</a>
         </div>
     </section>
 
-    <!-- [Manter todo o restante do HTML igual] -->
-    <!-- ... [Sobre, Serviços, Clientes, Contato, Footer] ... -->
+    <!-- Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <h2 class="section-title">SOBRE A VERTICAL</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <div class="credenciada-badge">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Hitachi-logo.svg/2560px-Hitachi-logo.svg.png" alt="Hitachi Logo" style="height: 30px;">
+                        <span>Credenciada Oficial</span>
+                    </div>
+                    <h3>Excelência em Refrigeração e Climatização</h3>
+                    <p>A Vertical Refrigeração atua no mercado de Manaus como empresa credenciada pela Hitachi, oferecendo soluções completas em sistemas de refrigeração e climatização. Nossa equipe altamente qualificada está preparada para atender desde pequenos projetos residenciais até grandes instalações comerciais e industriais.</p>
+                    <p>Como credenciada Hitachi, trabalhamos com equipamentos originais e seguimos rigorosos padrões de qualidade em todos os nossos serviços, garantindo a satisfação total de nossos clientes.</p>
+                    <p>Nossos técnicos são certificados e atualizados constantemente com as novas tecnologias do setor, especialmente nas linhas Hitachi que representamos.</p>
+                </div>
+                <div class="sobre-img">
+                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Equipe Vertical Refrigeração">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <h2 class="section-title">NOSSOS SERVIÇOS</h2>
+            <div class="servicos-grid">
+                <!-- Comércio -->
+                <div class="servico-card">
+                    <div class="servico-img">
+                        <img src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Comércio">
+                    </div>
+                    <div class="servico-content">
+                        <h3>COMÉRCIO</h3>
+                        <ul>
+                            <li>Sistemas de renovação de ar</li>
+                            <li>Splits, Splitsões, VRFs e Chillers</li>
+                            <li>Peças de reposição originais Hitachi</li>
+                            <li>Peças para diversas marcas e aplicações</li>
+                        </ul>
+                        <a href="#contato" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+                
+                <!-- Manutenção -->
+                <div class="servico-card">
+                    <div class="servico-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Manutenção">
+                    </div>
+                    <div class="servico-content">
+                        <h3>MANUTENÇÃO</h3>
+                        <ul>
+                            <li>Preventiva e corretiva</li>
+                            <li>PMOC - Plano de Manutenção, Operação e Controle</li>
+                            <li>Sistema automatizado e rastreável</li>
+                            <li>Especialistas em Hitachi, Daikin e Trane</li>
+                        </ul>
+                        <a href="#contato" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+                
+                <!-- Projetos -->
+                <div class="servico-card">
+                    <div class="servico-img">
+                        <img src="https://images.unsplash.com/photo-1581093057305-25a0a6b9f46c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Projetos">
+                    </div>
+                    <div class="servico-content">
+                        <h3>PROJETOS</h3>
+                        <ul>
+                            <li>Dimensionamento da carga térmica</li>
+                            <li>Execução completa</li>
+                            <li>Cadastro no CREA</li>
+                            <li>ART emitida</li>
+                        </ul>
+                        <a href="#contato" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientes -->
+    <section class="clientes" id="clientes">
+        <div class="container">
+            <h2 class="section-title">NOSSOS CLIENTES</h2>
+            <div class="clientes-grid">
+                <img src="https://via.placeholder.com/150x80?text=COEMA" alt="Coema" class="cliente-logo">
+                <img src="https://via.placeholder.com/150x80?text=Supermercados+Vitoria" alt="Supermercados Vitória" class="cliente-logo">
+                <img src="https://via.placeholder.com/150x80?text=Diario+do+Amazonas" alt="Diário do Amazonas" class="cliente-logo">
+                <img src="https://via.placeholder.com/150x80?text=3Rios" alt="3 Rios" class="cliente-logo">
+                <img src="https://via.placeholder.com/150x80?text=Superatacado" alt="Superatacado" class="cliente-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Hitachi-logo.svg/2560px-Hitachi-logo.svg.png" alt="Hitachi" class="cliente-logo" style="filter: grayscale(0%); opacity: 1;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <h2 class="section-title">AGENDE UMA VISITA</h2>
+            <div class="contato-container">
+                <div class="contato-info">
+                    <h3>DEIXE-NOS MOSTRAR QUE SOMOS REFERÊNCIA EM QUALIDADE DE SERVIÇO</h3>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>R. Galdino Ramos, 230, São Jorge, Manaus - AM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(92) 98136-2891 | (92) 99386-9977</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>verticalrefrigeracao@gmail.com<br>verticalrefrigeracao@hotmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Atendimento</h4>
+                            <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contato-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="servico">Serviço de Interesse</label>
+                            <select id="servico" name="servico">
+                                <option value="comercio">Comércio de Equipamentos</option>
+                                <option value="manutencao">Manutenção</option>
+                                <option value="projeto">Projeto</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Vertical Refrigeração</h3>
+                    <p>Credenciada Hitachi | Referência em qualidade de serviço para refrigeração e climatização em Manaus e região.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="#">Comércio de Equipamentos</a></li>
+                        <li><a href="#">Manutenção Preventiva</a></li>
+                        <li><a href="#">Manutenção Corretiva</a></li>
+                        <li><a href="#">Projetos Técnicos</a></li>
+                        <li><a href="#">Instalação</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#clientes">Clientes</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> R. Galdino Ramos, 230</li>
+                        <li><i class="fas fa-phone-alt"></i> (92) 98136-2891</li>
+                        <li><i class="fas fa-envelope"></i> verticalrefrigeracao@gmail.com</li>
+                        <li><i class="fas fa-certificate"></i> Credenciada Hitachi</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Vertical Refrigeração. Todos os direitos reservados. CNPJ: 14.637.360/0001-03</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
-        // [Manter todo o JavaScript igual]
+        // Menu Mobile
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const nav = document.querySelector('nav');
+        
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+        
+        // Fechar menu ao clicar em um link
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+        
+        // Smooth scrolling para links âncora
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Animação ao rolar
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            
+            if (scrollPosition > 100) {
+                document.querySelector('header').style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
+            } else {
+                document.querySelector('header').style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
     </script>
 </body>
 </html>
