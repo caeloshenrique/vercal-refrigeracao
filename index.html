@@ -106,7 +106,7 @@
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(0, 91, 150, 0.8), rgba(0, 91, 150, 0.8)), 
-                        url('https://www.hitachiaircon.com/sites/default/files/styles/hero_banner/public/2021-07/Hitachi-hero-banner-air-conditioning.jpg?itok=KXo4JQ3X');
+                        url('Hitachi.02.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -124,6 +124,10 @@
             z-index: 1;
             width: 100%;
             padding: 2rem;
+            background-color: rgba(0, 91, 150, 0.7);
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
         }
         
         .hero-content h1 {
@@ -135,9 +139,6 @@
         .hero-content p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
         
@@ -283,10 +284,30 @@
             margin-bottom: 1.5rem;
         }
         
+        /* Projetos VRF */
+        .projetos-vrf {
+            padding: 5rem 0;
+            background-color: var(--cinza-claro);
+        }
+        
+        .projeto-img {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .projeto-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
         /* Clientes */
         .clientes {
             padding: 5rem 0;
-            background-color: var(--cinza-claro);
         }
         
         .clientes-grid {
@@ -313,6 +334,7 @@
         /* Contato */
         .contato {
             padding: 5rem 0;
+            background-color: var(--cinza-claro);
         }
         
         .contato-container {
@@ -520,6 +542,7 @@
                     <li><a href="#home">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#projetos">Projetos VRF</a></li>
                     <li><a href="#clientes">Clientes</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
@@ -529,7 +552,7 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="container hero-content">
+        <div class="hero-content">
             <h1>Referência em Qualidade de Serviço</h1>
             <p>Especializados em comércio, instalação e manutenção de sistemas Hitachi, com projetos técnicos elaborados por profissionais qualificados. Credenciada oficialmente pela Hitachi.</p>
             <div class="btn-container">
@@ -546,16 +569,15 @@
             <div class="sobre-content">
                 <div class="sobre-text">
                     <div class="credenciada-badge">
-                        <img src="https://www.hitachiaircon.com/themes/custom/hitachi/logo.svg" alt="Hitachi Logo">
+                        <img src="hitachi.03.jpg" alt="Hitachi Logo">
                         <span>Credenciada Oficial</span>
                     </div>
                     <h3>Excelência em Refrigeração e Climatização</h3>
                     <p>A Vertical Refrigeração é uma empresa credenciada oficialmente pela Hitachi, oferecendo soluções completas em sistemas de refrigeração e climatização em Manaus. Nossa equipe altamente qualificada está preparada para atender desde pequenos projetos residenciais até grandes instalações comerciais e industriais.</p>
                     <p>Como parceira autorizada Hitachi, temos acesso direto aos equipamentos originais, peças de reposição e treinamentos técnicos exclusivos, garantindo a máxima qualidade em todos os nossos serviços.</p>
-                    <p>Nossos técnicos são certificados pela Hitachi e atualizados constantemente com as novas tecnologias e modelos da marca.</p>
                 </div>
                 <div class="sobre-img">
-                    <img src="https://www.hitachiaircon.com/sites/default/files/styles/product_teaser/public/2021-07/Hitachi-product-Slim-series.jpg?itok=4QJ0yZ4L" alt="Equipamentos Hitachi">
+                    <img src="Hitachi.02.jpg" alt="Equipamentos Hitachi">
                 </div>
             </div>
         </div>
@@ -569,7 +591,7 @@
                 <!-- Comércio -->
                 <div class="servico-card servico-hitachi">
                     <div class="servico-img">
-                        <img src="https://www.hitachiaircon.com/sites/default/files/styles/product_teaser/public/2021-07/Hitachi-product-VRF.jpg?itok=9W4JYf7R" alt="Comércio de Equipamentos Hitachi">
+                        <img src="Hitachi.02.jpg" alt="Comércio de Equipamentos Hitachi">
                     </div>
                     <div class="servico-content">
                         <h3>COMÉRCIO HITACHI</h3>
@@ -578,7 +600,6 @@
                             <li>VRFs e Sistemas Centrais</li>
                             <li>Equipamentos comerciais e industriais</li>
                             <li>Peças de reposição originais</li>
-                            <li>Garantia oficial Hitachi</li>
                         </ul>
                         <a href="#contato" class="btn btn-hitachi">Solicitar Catálogo</a>
                     </div>
@@ -587,7 +608,7 @@
                 <!-- Manutenção -->
                 <div class="servico-card">
                     <div class="servico-img">
-                        <img src="https://www.hitachiaircon.com/sites/default/files/styles/product_teaser/public/2021-07/Hitachi-product-maintenance.jpg?itok=5Q8JYf7R" alt="Manutenção">
+                        <img src="hitachi.03.jpg" alt="Manutenção">
                     </div>
                     <div class="servico-content">
                         <h3>MANUTENÇÃO</h3>
@@ -595,7 +616,6 @@
                             <li>Preventiva e corretiva especializada</li>
                             <li>PMOC - Plano de Manutenção Hitachi</li>
                             <li>Laudos técnicos e relatórios</li>
-                            <li>Manutenção predial de sistemas VRF</li>
                             <li>Atendimento emergencial 24h</li>
                         </ul>
                         <a href="#contato" class="btn">Agendar Visita</a>
@@ -605,7 +625,7 @@
                 <!-- Projetos -->
                 <div class="servico-card">
                     <div class="servico-img">
-                        <img src="https://www.hitachiaircon.com/sites/default/files/styles/product_teaser/public/2021-07/Hitachi-product-commercial.jpg?itok=6Q8JYf7R" alt="Projetos">
+                        <img src="projeto.vrf.jpeg" alt="Projetos">
                     </div>
                     <div class="servico-content">
                         <h3>PROJETOS</h3>
@@ -614,11 +634,26 @@
                             <li>Projetos para sistemas VRF Hitachi</li>
                             <li>Instalações comerciais completas</li>
                             <li>Regularização no CREA</li>
-                            <li>ART e documentação técnica</li>
                         </ul>
                         <a href="#contato" class="btn">Consultar Projeto</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos VRF -->
+    <section class="projetos-vrf" id="projetos">
+        <div class="container">
+            <h2 class="section-title">PROJETOS VRF HITACHI</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">Confira nosso mais recente projeto de sistema VRF Hitachi, com diagramas técnicos e especificações completas.</p>
+            
+            <div class="projeto-img">
+                <img src="projeto.vrf.jpeg" alt="Projeto VRF Hitachi">
+            </div>
+            
+            <div style="text-align: center;">
+                <a href="#contato" class="btn btn-hitachi">Solicitar Projeto Personalizado</a>
             </div>
         </div>
     </section>
@@ -631,8 +666,7 @@
                 <img src="https://via.placeholder.com/150x80?text=COEMA" alt="Coema" class="cliente-logo">
                 <img src="https://via.placeholder.com/150x80?text=Supermercados+Vitoria" alt="Supermercados Vitória" class="cliente-logo">
                 <img src="https://via.placeholder.com/150x80?text=Diario+do+Amazonas" alt="Diário do Amazonas" class="cliente-logo">
-                <img src="https://via.placeholder.com/150x80?text=3Rios" alt="3 Rios" class="cliente-logo">
-                <img src="https://www.hitachiaircon.com/themes/custom/hitachi/logo.svg" alt="Hitachi" class="cliente-logo" style="filter: grayscale(0%); opacity: 1;">
+                <img src="hitachi.03.jpg" alt="Hitachi" class="cliente-logo" style="filter: grayscale(0%); opacity: 1;">
             </div>
         </div>
     </section>
@@ -670,14 +704,6 @@
                     </div>
                     
                     <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h4>Horário de Atendimento</h4>
-                            <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
                         <i class="fas fa-certificate"></i>
                         <div>
                             <h4>Certificação</h4>
@@ -710,17 +736,6 @@
                                 <option value="manutencao">Manutenção</option>
                                 <option value="projeto">Projeto</option>
                                 <option value="instalacao">Instalação</option>
-                                <option value="outro">Outro</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="marca">Marca do Equipamento</label>
-                            <select id="marca" name="marca">
-                                <option value="hitachi">Hitachi</option>
-                                <option value="daikin">Daikin</option>
-                                <option value="trane">Trane</option>
-                                <option value="outra">Outra</option>
                             </select>
                         </div>
                         
@@ -757,7 +772,6 @@
                         <li><a href="#">Manutenção Preventiva</a></li>
                         <li><a href="#">Assistência Técnica</a></li>
                         <li><a href="#">Projetos Especializados</a></li>
-                        <li><a href="#">Instalação Profissional</a></li>
                     </ul>
                 </div>
                 
@@ -767,7 +781,7 @@
                         <li><a href="#home">Início</a></li>
                         <li><a href="#sobre">Sobre Nós</a></li>
                         <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#clientes">Clientes</a></li>
+                        <li><a href="#projetos">Projetos VRF</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
@@ -785,7 +799,6 @@
             
             <div class="copyright">
                 <p>&copy; 2023 Vertical Refrigeração. Todos os direitos reservados. CNPJ: 14.637.360/0001-03</p>
-                <p style="margin-top: 1rem;">Site não oficial. Todas as imagens de produtos Hitachi são propriedade de <a href="https://www.hitachiaircon.com/" style="color: var(--branco);" target="_blank">Hitachi Air Conditioning</a>.</p>
             </div>
         </div>
     </footer>
