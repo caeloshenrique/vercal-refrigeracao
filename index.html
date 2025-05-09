@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vertical Refrigeração - Referência em Qualidade</title>
+    <title>Vertical Refrigeração - Credenciada Hitachi | Referência em Qualidade</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Reset e Variáveis */
@@ -60,6 +60,22 @@
             color: var(--verde);
         }
         
+        .credenciamento {
+            background-color: var(--verde);
+            color: var(--branco);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+        }
+        
+        .credenciamento i {
+            margin-right: 0.3rem;
+        }
+        
         nav ul {
             display: flex;
             list-style: none;
@@ -88,7 +104,7 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1609358905581-d7f6fd0a6d8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -155,6 +171,21 @@
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
             color: var(--azul);
+        }
+        
+        .credenciada-badge {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--azul);
+            color: var(--branco);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .credenciada-badge img {
+            height: 30px;
+            margin-right: 0.8rem;
         }
         
         .sobre-img {
@@ -427,6 +458,10 @@
             .hero-content h1 {
                 font-size: 2.5rem;
             }
+            
+            .credenciamento {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -434,7 +469,12 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <div class="logo">VERTICAL <span>REFRIGERAÇÃO</span></div>
+            <div style="display: flex; align-items: center;">
+                <div class="logo">VERTICAL <span>REFRIGERAÇÃO</span></div>
+                <div class="credenciamento">
+                    <i class="fas fa-check-circle"></i> Credenciada Hitachi
+                </div>
+            </div>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -455,7 +495,7 @@
         <div class="container hero-content">
             <div>
                 <h1>Referência em Qualidade de Serviço</h1>
-                <p>Especializados em comércio, instalação e manutenção de ar condicionado, com projetos técnicos elaborados por profissionais qualificados.</p>
+                <p>Especializados em comércio, instalação e manutenção de ar condicionado, com projetos técnicos elaborados por profissionais qualificados. Credenciada oficialmente pela Hitachi.</p>
                 <a href="#contato" class="btn">Solicite um Orçamento</a>
             </div>
         </div>
@@ -467,13 +507,17 @@
             <h2 class="section-title">SOBRE A VERTICAL</h2>
             <div class="sobre-content">
                 <div class="sobre-text">
+                    <div class="credenciada-badge">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Hitachi-logo.svg/2560px-Hitachi-logo.svg.png" alt="Hitachi Logo" style="height: 30px;">
+                        <span>Credenciada Oficial</span>
+                    </div>
                     <h3>Excelência em Refrigeração e Climatização</h3>
-                    <p>A Vertical Refrigeração atua no mercado de Manaus oferecendo soluções completas em sistemas de refrigeração e climatização. Nossa equipe altamente qualificada está preparada para atender desde pequenos projetos residenciais até grandes instalações comerciais e industriais.</p>
-                    <p>Trabalhamos com as melhores marcas do mercado e seguimos rigorosos padrões de qualidade em todos os nossos serviços, garantindo a satisfação total de nossos clientes.</p>
-                    <p>Nossos técnicos são certificados e atualizados constantemente com as novas tecnologias do setor.</p>
+                    <p>A Vertical Refrigeração atua no mercado de Manaus como empresa credenciada pela Hitachi, oferecendo soluções completas em sistemas de refrigeração e climatização. Nossa equipe altamente qualificada está preparada para atender desde pequenos projetos residenciais até grandes instalações comerciais e industriais.</p>
+                    <p>Como credenciada Hitachi, trabalhamos com equipamentos originais e seguimos rigorosos padrões de qualidade em todos os nossos serviços, garantindo a satisfação total de nossos clientes.</p>
+                    <p>Nossos técnicos são certificados e atualizados constantemente com as novas tecnologias do setor, especialmente nas linhas Hitachi que representamos.</p>
                 </div>
                 <div class="sobre-img">
-                    <img src="https://images.unsplash.com/photo-1600566752229-250ed79470a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Equipe Vertical Refrigeração">
+                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Equipe Vertical Refrigeração">
                 </div>
             </div>
         </div>
@@ -494,7 +538,7 @@
                         <ul>
                             <li>Sistemas de renovação de ar</li>
                             <li>Splits, Splitsões, VRFs e Chillers</li>
-                            <li>Peças de reposição originais</li>
+                            <li>Peças de reposição originais Hitachi</li>
                             <li>Peças para diversas marcas e aplicações</li>
                         </ul>
                         <a href="#contato" class="btn">Saiba Mais</a>
@@ -512,7 +556,7 @@
                             <li>Preventiva e corretiva</li>
                             <li>PMOC - Plano de Manutenção, Operação e Controle</li>
                             <li>Sistema automatizado e rastreável</li>
-                            <li>Marcas: Hitachi, Daikin e Trane</li>
+                            <li>Especialistas em Hitachi, Daikin e Trane</li>
                         </ul>
                         <a href="#contato" class="btn">Saiba Mais</a>
                     </div>
@@ -548,6 +592,7 @@
                 <img src="https://via.placeholder.com/150x80?text=Diario+do+Amazonas" alt="Diário do Amazonas" class="cliente-logo">
                 <img src="https://via.placeholder.com/150x80?text=3Rios" alt="3 Rios" class="cliente-logo">
                 <img src="https://via.placeholder.com/150x80?text=Superatacado" alt="Superatacado" class="cliente-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Hitachi-logo.svg/2560px-Hitachi-logo.svg.png" alt="Hitachi" class="cliente-logo" style="filter: grayscale(0%); opacity: 1;">
             </div>
         </div>
     </section>
@@ -638,7 +683,7 @@
             <div class="footer-container">
                 <div class="footer-col">
                     <h3>Vertical Refrigeração</h3>
-                    <p>Referência em qualidade de serviço para refrigeração e climatização em Manaus e região.</p>
+                    <p>Credenciada Hitachi | Referência em qualidade de serviço para refrigeração e climatização em Manaus e região.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -674,6 +719,7 @@
                         <li><i class="fas fa-map-marker-alt"></i> R. Galdino Ramos, 230</li>
                         <li><i class="fas fa-phone-alt"></i> (92) 98136-2891</li>
                         <li><i class="fas fa-envelope"></i> verticalrefrigeracao@gmail.com</li>
+                        <li><i class="fas fa-certificate"></i> Credenciada Hitachi</li>
                     </ul>
                 </div>
             </div>
